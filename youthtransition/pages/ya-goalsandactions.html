@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Youth Appraisal Health</title>
+    <title>Youth Appraisal Goals & Actions</title>
 
     <!-- Bootstrap Core -->
 
@@ -114,7 +114,7 @@
                                     Pregnant / Parenting
                                 </a>
                             </li>
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="./ya-health.html">
                                     <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
                                     Health
@@ -156,7 +156,7 @@
                                     Personal
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="./ya-goalsandactions.html">
                                     <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
                                     Goals and Actions
@@ -224,35 +224,122 @@
                 </div>
                 <div class="card d-flex">
                     <div class="card-header">
-                        <h4 class="text-center">Health</h4>
+                        <h4 class="text-center">Goals & Actions</h4>
                     </div>
                     <div class="card-body">
-                        <form [formGroup]="healthForm" (ngSubmit)="onNext()">
+                        <form [formGroup]="goalsandactionsForm" (ngSubmit)="onNext()">
                             <div class="row">
-                                <div class="col-12">
-                                     <label for="demographics_phone">Do you have any medical issues to address?</label>
+                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                    <label class="col-form-label">Length of time in current placement </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="timeInPlacement" value="zerotosix"
+                                                       formControlName="timeInPlacement"> 0 - 6 months
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline pl-2">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="timeInPlacement" value="sixtotwelve"
+                                                       formControlName="timeInPlacement"> 6 - 12 months
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="timeInPlacement" value="twelvetoeighteen"
+                                                       formControlName="timeInPlacement"> 12 - 18 months
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="timeInPlacement" value="eighteentotwentyfour"
+                                                       formControlName="timeInPlacement"> 18 - 24 months
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label class="col-form-label">How many placements have you had while in care?</label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="placementsInCare" value="1to4"
+                                                       formControlName="placementsInCare"> &nbsp;1 - 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="placementsInCare" value="5plus"
+                                                       formControlName="placementsInCare"> &nbsp;5 or more
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                     <label for="demographics_phone">If applicable, why have you changed placements?</label>
                                      <input type="tel" class="form-control"
                                             id="placementandsafety.whychangedplacements" formControlName="whychangedplacements"
-                                               placeholder="Medical Issues?">
+                                               placeholder="Why Changed?">
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label class="col-form-label">Do you feel safe in your placement? </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="feelSafeInPlacement" value="yes"
+                                                       formControlName="feelSafeInPlacement"> &nbsp;Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="feelSafeInPlacement" value="no"
+                                                       formControlName="feelSafeInPlacement"> &nbsp;No
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="demographics_phone">If no, why?</label>
+                                    <input type="tel" class="form-control"
+                                           id="placementandsafety.whynotsafeInPlacement" formControlName="whynotsafeInPlacement"
+                                           placeholder="Why?">
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
 
-                            <a class="btn btn-outline-primary float-left" href="./ya-pregnantparenting.html">
+                            <a class="btn btn-outline-primary float-left" href="./ya-personal.html">
                                 <!--<i class="fa fa-home fa-fw" style="font-size: 20px;"></i>-->
-                                Previous: Pregnant Parenting
+                                Previous: Personal
                             </a>
                             <!-- ***Note: the above link is just for html demo below is for submission to Angular
-                            <button type="submit" class="btn btn-outline-primary float-right" >Next: Pregnant Parenting</button>
+                            <button type="submit" class="btn btn-outline-primary float-right" >
+                                Next: Personal
+                            </button>
                             -->
-                            <a class="btn btn-outline-primary float-right" href="./ya-relationships.html">
+                            <a class="btn btn-outline-primary float-right" href="./ya-rec">
                                 <!--<i class="fa fa-home fa-fw" style="font-size: 20px;"></i>-->
-                                Next: Relationships
+                                Next: Stipends
                             </a>
                             <!-- ***Note: the above link is just for html demo below is for submission to Angular
-                            <button type="submit" class="btn btn-outline-primary float-right" >Next: Relationships</button>
+                            <button type="submit" class="btn btn-outline-primary float-right" >Next: Stipends</button>
                             -->
-
                         </form>
                         <!-- #EndLibraryItem -->
                     </div> <!-- col-xs-12 -->
