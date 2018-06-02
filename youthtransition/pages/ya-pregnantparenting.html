@@ -224,7 +224,7 @@
                 </div>
                 <div class="card d-flex">
                     <div class="card-header">
-                        <h4 class="text-center">Pregnant Parenting</h4>
+                        <h4 class="text-center">Pregnant Parenting (if applicable)</h4>
                     </div>
                     <div class="card-body">
                         <form [formGroup]="pregnantParentingform" (ngSubmit)="onNext()">
@@ -281,10 +281,208 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <label for="pregnantParenting.myChildren">
-                                        If yes, names/ages of child(ren)</label>
-                                    <textarea type="tel" class="form-control" rows="3"
-                                           id="pregnantParenting.myChildren" formControlName="myChildren"
-                                              placeholder="Names/Ages?"></textarea>
+                                        If yes, add child(ren)</label>
+                                    <button>Add Child</button>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                                <div class="card d-flex">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <label for="header.youthName">Child Name # 1</label>
+                                                <input class="form-control form-control-sm"
+                                                       id="pregnantParenting.childName01" placeholder="Enter Child Name"
+                                                       formControlName="childName01">
+
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <label for="header.youthName">Child Age</label>
+                                                <input class="form-control form-control-sm w-25"
+                                                       id="pregnantParenting.childAge01" placeholder="Age"
+                                                       formControlName="childAge01">
+
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <label class="col-form-label">
+                                                    Lives with you?</label>
+                                                <fieldset class="form-group">
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="childLivesWithYou01" value="yes"
+                                                                   formControlName="childLivesWithYou01"> &nbsp;&nbsp;Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="parent" value="no"
+                                                                   formControlName="parent"> &nbsp;&nbsp;No
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <label for="header.youthName">Child Name # 1</label>
+                                                <input class="form-control form-control-sm"
+                                                       id="pregnantParenting.childName01" placeholder="Enter Child Name"
+                                                       formControlName="childName01">
+
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <label for="header.youthName">Child Age</label>
+                                                <input class="form-control form-control-sm w-25"
+                                                       id="pregnantParenting.childAge01" placeholder="Age"
+                                                       formControlName="childAge01">
+
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <label class="col-form-label">
+                                                    Lives with you?</label>
+                                                <fieldset class="form-group">
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="childLivesWithYou01" value="yes"
+                                                                   formControlName="childLivesWithYou01"> &nbsp;&nbsp;Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="parent" value="no"
+                                                                   formControlName="parent"> &nbsp;&nbsp;No
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 table-responsive">
+                                    <table class="table table-bordered">
+                                        <label>If yes, add child(ren)  </label>&nbsp;&nbsp;
+                                        <button class="btn btn-primary">Add Child</button>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col-2">Age</th>
+                                            <th scope="col">Living With?</th>
+                                            <th scope="col">Custody</th>
+                                            <th scope="col">If No</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="childName01">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm w-25"
+                                                       formControlName="childAge01">
+                                            </td>
+                                            <td>
+                                                <fieldset class="form-group">
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="childLivesWithYou01" value="yes"
+                                                                   formControlName="childLivesWithYou01"> &nbsp;&nbsp;Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="parent" value="no"
+                                                                   formControlName="parent"> &nbsp;&nbsp;No
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </td>
+                                            <td>
+                                                <fieldset class="form-group">
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="childLivesWithYou01" value="yes"
+                                                                   formControlName="childLivesWithYou01"> &nbsp;&nbsp;Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="parent" value="no"
+                                                                   formControlName="parent"> &nbsp;&nbsp;No
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="childCustodyExplain">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="childName02">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm w-25"
+                                                       formControlName="childAge02">
+                                            </td>
+                                            <td>
+                                                <fieldset class="form-group">
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="childLivesWithYou01" value="yes"
+                                                                   formControlName="childLivesWithYou01"> &nbsp;&nbsp;Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="parent" value="no"
+                                                                   formControlName="parent"> &nbsp;&nbsp;No
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </td>
+                                            <td>
+                                                <fieldset class="form-group">
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="childLivesWithYou01" value="yes"
+                                                                   formControlName="childLivesWithYou01"> &nbsp;&nbsp;Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="parent" value="no"
+                                                                   formControlName="parent"> &nbsp;&nbsp;No
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="childCustodyExplain02">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
