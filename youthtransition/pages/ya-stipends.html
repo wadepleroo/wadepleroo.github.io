@@ -229,99 +229,200 @@
                     <div class="card-body">
                         <form [formGroup]="housingForm" (ngSubmit)="onNext()">
                             <div class="row">
-                                <div class="col-12 col-md-6 pt-2 pt-md-0">
-                                    <label class="col-form-label">Length of time in current placement </label>
+                                <div class="col-12 col-md-4">
+                                    <h4 class="col-form-label pt-3">
+                                        Senior Year
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label class="col-form-label">
+                                        Stipend Requested?
+                                    </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="timeInPlacement" value="zerotosix"
-                                                       formControlName="timeInPlacement"> 0 - 6 months
+                                                       name="seniorYearStipendRequested" value="yes"
+                                                       formControlName="seniorYearStipendRequested">
+                                                &nbsp;&nbsp;Yes
                                             </label>
                                         </div>
-                                        <div class="form-check form-check-inline pl-2">
+                                        <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="timeInPlacement" value="sixtotwelve"
-                                                       formControlName="timeInPlacement"> 6 - 12 months
+                                                       name="seniorYearStipendRequested" value="no"
+                                                       formControlName="seniorYearStipendRequested">
+                                                &nbsp;&nbsp;No
                                             </label>
                                         </div>
                                         <br/>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
                                                 <input type="radio" class="form-check-input"
-                                                       name="timeInPlacement" value="twelvetoeighteen"
-                                                       formControlName="timeInPlacement"> 12 - 18 months
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="timeInPlacement" value="eighteentotwentyfour"
-                                                       formControlName="timeInPlacement"> 18 - 24 months
+                                                       name="seniorYearStipendRequested" value="other"
+                                                       formControlName="seniorYearStipendRequested">
+                                                &nbsp;&nbsp;Other
+                                                <input type="text" class="form-check-input ml-3 mt-0"
+                                                       formControlName="seniorYearStipendRequestedOther">
                                             </label>
                                         </div>
                                     </fieldset>
                                 </div>
-                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label for="stipends.seniorStipendRequestDate"
+                                           class="col-form-label">Request Date</label>
+                                    <input type="text" class="form-control form-control-sm datepicker w-50"
+                                           id="stipends.seniorStipendRequestDate" placeholder="Date"
+                                           formControlName="seniorStipendRequestDate">
                                 </div>
-                            </div> <!-- form-row -->
+                            </div>
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <label class="col-form-label">How many placements have you had while in care?</label>
+                                <div class="col-12 col-md-4">
+                                    <h4 class="col-form-label pt-3">
+                                        Graduation
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label class="col-form-label">
+                                        Stipend Requested?
+                                    </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="placementsInCare" value="1to4"
-                                                       formControlName="placementsInCare"> &nbsp;1 - 4
+                                                       name="graduationYearStipendRequested" value="yes"
+                                                       formControlName="graduationYearStipendRequested">
+                                                &nbsp;&nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="placementsInCare" value="5plus"
-                                                       formControlName="placementsInCare"> &nbsp;5 or more
+                                                       name="graduationYearStipendRequested" value="no"
+                                                       formControlName="graduationYearStipendRequested">
+                                                &nbsp;&nbsp;No
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio" class="form-check-input"
+                                                       name="graduationYearStipendRequested" value="other"
+                                                       formControlName="graduationYearStipendRequested">
+                                                &nbsp;&nbsp;Other
+                                                <input type="text" class="form-check-input ml-3 mt-0"
+                                                       formControlName="graduationYearStipendRequestedOther">
                                             </label>
                                         </div>
                                     </fieldset>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                     <label for="demographics_phone">If applicable, why have you changed placements?</label>
-                                     <input type="tel" class="form-control"
-                                            id="placementandsafety.whychangedplacements" formControlName="whychangedplacements"
-                                               placeholder="Why Changed?">
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label for="stipends.graduationStipendRequestDate"
+                                           class="col-form-label">Request Date</label>
+                                    <input type="text" class="form-control form-control-sm datepicker w-50"
+                                           id="stipends.graduationStipendRequestDate" placeholder="Date"
+                                           formControlName="graduationStipendRequestDate">
                                 </div>
-                            </div> <!-- form-row -->
+                            </div>
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <label class="col-form-label">Do you feel safe in your placement? </label>
+                                <div class="col-12 col-md-4">
+                                    <h4 class="col-form-label pt-3">
+                                        College Bound
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label class="col-form-label">
+                                        Stipend Requested?
+                                    </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="feelSafeInPlacement" value="yes"
-                                                       formControlName="feelSafeInPlacement"> &nbsp;Yes
+                                                       name="collegeBoundYearStipendRequested" value="yes"
+                                                       formControlName="collegeBoundYearStipendRequested">
+                                                &nbsp;&nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="feelSafeInPlacement" value="no"
-                                                       formControlName="feelSafeInPlacement"> &nbsp;No
+                                                       name="collegeBoundYearStipendRequested" value="no"
+                                                       formControlName="collegeBoundYearStipendRequested">
+                                                &nbsp;&nbsp;No
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio" class="form-check-input"
+                                                       name="collegeBoundYearStipendRequested" value="other"
+                                                       formControlName="collegeBoundYearStipendRequested">
+                                                &nbsp;&nbsp;Other
+                                                <input type="text" class="form-check-input ml-3 mt-0"
+                                                       formControlName="collegeBoundYearStipendRequestedOther">
                                             </label>
                                         </div>
                                     </fieldset>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="demographics_phone">If no, why?</label>
-                                    <input type="tel" class="form-control"
-                                           id="placementandsafety.whynotsafeInPlacement" formControlName="whynotsafeInPlacement"
-                                           placeholder="Why?">
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label for="stipends.seniorStipendRequestDate"
+                                           class="col-form-label">Request Date</label>
+                                    <input type="text" class="form-control form-control-sm datepicker w-50"
+                                           id="stipends.collegeBoundStipendRequestDate" placeholder="Date"
+                                           formControlName="collegeBoundStipendRequestDate">
                                 </div>
-                            </div> <!-- form-row -->
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <h4 class="col-form-label pt-3">
+                                        Start Up
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label class="col-form-label">
+                                        Stipend Requested?
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="startUpYearStipendRequested" value="yes"
+                                                       formControlName="startUpStipendRequested">
+                                                &nbsp;&nbsp;Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="startUpStipendRequested" value="no"
+                                                       formControlName="startUpStipendRequested">
+                                                &nbsp;&nbsp;No
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio" class="form-check-input"
+                                                       name="startUpStipendRequested" value="other"
+                                                       formControlName="startUpStipendRequested">
+                                                &nbsp;&nbsp;Other
+                                                <input type="text" class="form-check-input ml-3 mt-0"
+                                                       formControlName="startUpYearStipendRequestedOther">
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label for="stipends.seniorStipendRequestDate"
+                                           class="col-form-label">Request Date</label>
+                                    <input type="text" class="form-control form-control-sm datepicker w-50"
+                                           id="stipends.startUpStipendRequestDate" placeholder="Date"
+                                           formControlName="startUpStipendRequestDate">
+                                </div>
+                            </div>
                             <hr/>
 
                             <a class="btn btn-outline-primary float-left" href="./ya-lifeskills.html">

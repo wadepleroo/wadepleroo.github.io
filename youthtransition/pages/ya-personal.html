@@ -229,100 +229,49 @@
                     <div class="card-body">
                         <form [formGroup]="housingForm" (ngSubmit)="onNext()">
                             <div class="row">
-                                <div class="col-12 col-md-6 pt-2 pt-md-0">
-                                    <label class="col-form-label">Length of time in current placement </label>
-                                    <fieldset class="form-group">
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="timeInPlacement" value="zerotosix"
-                                                       formControlName="timeInPlacement"> 0 - 6 months
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline pl-2">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="timeInPlacement" value="sixtotwelve"
-                                                       formControlName="timeInPlacement"> 6 - 12 months
-                                            </label>
-                                        </div>
-                                        <br/>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="timeInPlacement" value="twelvetoeighteen"
-                                                       formControlName="timeInPlacement"> 12 - 18 months
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="timeInPlacement" value="eighteentotwentyfour"
-                                                       formControlName="timeInPlacement"> 18 - 24 months
-                                            </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                <div class="col-12">
+                                    <label class="col-form-label" for="personal.supportInNext6Months">
+                                        What types of support do you hope to receive in the next six months?
+                                    </label>
+                                    <textarea type="text" class="form-control" id="personal.supportInNext6Months"
+                                              placeholder="Reason" rows="2" formControlName="supportInNext6Months">
+                                            </textarea>
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <label class="col-form-label">How many placements have you had while in care?</label>
-                                    <fieldset class="form-group">
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="placementsInCare" value="1to4"
-                                                       formControlName="placementsInCare"> &nbsp;1 - 4
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="placementsInCare" value="5plus"
-                                                       formControlName="placementsInCare"> &nbsp;5 or more
-                                            </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                     <label for="demographics_phone">If applicable, why have you changed placements?</label>
-                                     <input type="tel" class="form-control"
-                                            id="placementandsafety.whychangedplacements" formControlName="whychangedplacements"
-                                               placeholder="Why Changed?">
+                                <div class="col-12">
+                                    <label class="col-form-label" for="personal.supportInNext6Months">
+                                        If you could achieve one goal over the next six months, what would it be?                                      </label>
+                                    <textarea type="text" class="form-control" id="personal.goalInNext6Months"
+                                              placeholder="Reason" rows="2" formControlName="goalInNext6Months">
+                                            </textarea>
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <label class="col-form-label">Do you feel safe in your placement? </label>
-                                    <fieldset class="form-group">
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="feelSafeInPlacement" value="yes"
-                                                       formControlName="feelSafeInPlacement"> &nbsp;Yes
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="feelSafeInPlacement" value="no"
-                                                       formControlName="feelSafeInPlacement"> &nbsp;No
-                                            </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="demographics_phone">If no, why?</label>
-                                    <input type="tel" class="form-control"
-                                           id="placementandsafety.whynotsafeInPlacement" formControlName="whynotsafeInPlacement"
-                                           placeholder="Why?">
+                                <div class="col-12">
+                                    <label class="col-form-label" for="personal.supportInNext6Months">
+                                        What motivates you to succeed or reach your goals?
+                                    </label>
+                                    <textarea type="text" class="form-control" id="personal.motivationForGoals"
+                                              placeholder="Reason" rows="2" formControlName="motivationForGoals">
+                                            </textarea>
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="col-form-label" for="personal.supportInNext6Months">
+                                        What challenges are you currently facing?
+                                    </label>
+                                    <textarea type="text" class="form-control" id="personal.currentChallenges"
+                                              placeholder="Reason" rows="2" formControlName="currentChallenges">
+                                            </textarea>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+
 
                             <a class="btn btn-outline-primary float-left" href="./ya-continuingsupportservices.html">
                                 <!--<i class="fa fa-home fa-fw" style="font-size: 20px;"></i>-->
