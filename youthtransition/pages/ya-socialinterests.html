@@ -258,6 +258,153 @@
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
+                            <!-- Activities -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        If yes, select all that apply:
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="dance"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Dance
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="cheerleading"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Cheerleeding
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="science"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Choir/Chorus
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="band"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Band
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="drama_theater"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Drama Theater
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="baseball"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Baseball
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="softball"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Softball
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="football"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Football
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="soccer"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Soccer
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="track"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Track
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="golf"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Golf
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="basketball"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Basketball
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="schoolactivities"
+                                                       value="swimming"
+                                                       formControlName="schoolactivities">
+                                                &nbsp;Swimming
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check form-check-inline">
+                                            <div class="row">
+                                                <div class="col-6 pt-2">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input"
+                                                               name="needhelpinsubject" value="other"
+                                                               formControlName="needhelpinsubject">  &nbsp;
+                                                        Other
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-check-input"
+                                                           formControlName="otherhelpneeded">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <label class="col-form-label">Are you involved in religious activities or spiritual practices?</label>
@@ -281,13 +428,14 @@
                                     </fieldset>
                                 </div>
                                 <div class="col-12 col-md-6 pt-2 pt-md-0">
-                                    <label for="socialinterests.listActivities">If Yes, list:</label>
-                                    <textarea type="tel" class="form-control" id="socialinterests.listReligiousActivities"
+                                    <label for="socialinterests.listspritual">If Yes, list:</label>
+                                    <textarea type="tel" class="form-control" id="socialinterests.listActivities"
                                               placeholder="List your activities"
-                                              formControlName="listReligiousActivities" rows="3"></textarea>
+                                              formControlName="listspritual" rows="3"></textarea>
                                 </div>
-                            </div> <!-- form-row -->
+                                </div> <!-- form-row -->
                             <hr/>
+
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <label class="col-form-label">Do you have hobbies or other interests?</label>
