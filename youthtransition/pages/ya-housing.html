@@ -228,6 +228,76 @@
                     </div>
                     <div class="card-body">
                         <form [formGroup]="housingForm" (ngSubmit)="onNext()">
+                            <!-- Current Housing Status -->
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label class="col-form-label">
+                                        What is your housing plan?</label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="housingplan"
+                                                       value="planpayingRentOrMortgage"
+                                                       formControlName="housingplan">
+                                                Own home paying rent or mortgage
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="housingplan"
+                                                       value="plansharedhousing"
+                                                       formControlName="housingplan">
+                                                Shared Housing (roommate)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="housingplan"
+                                                       value="planlivingwithrelative"
+                                                       formControlName="housingplan">
+                                                Live with relatives
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="housingplan"
+                                                       value="planfosterparent"
+                                                       formControlName="housingplan">
+                                                Live with current/former foster parent
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="housingplan"
+                                                       value="planfacilityinstitution"
+                                                       formControlName="housingplan">
+                                                Facility / Institution
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <h4 class="text-left">
+                                        Youth Out of Care</h4>
+                                </div>
+                            </div>
+                            <hr/>
+                            <!-- Current Housing Status -->
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <label class="col-form-label">What is your current housing situation?</label>
@@ -320,35 +390,58 @@
                                     </fieldset>
                                 </div>
                                 <div class="col-12 col-md-6 pt-2 pt-md-0">
-                                    <label class="col-form-label">If yes, how long?</label>
+                                    <label class="col-form-label">
+                                        If yes, how long?</label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="homelesshowlong" value="zerotosix"
-                                                       formControlName="homelesshowlong"> 0 - 6 months
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="homelesshowlong"
+                                                       value="zerotosix"
+                                                       formControlName="homelesshowlong">
+                                                0 - 6 months
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline pl-2">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="homelesshowlong" value="sixtotwelve"
-                                                       formControlName="homelesshowlong"> 6 - 12 months
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="homelesshowlong"
+                                                       value="seventotwelve"
+                                                       formControlName="homelesshowlong">
+                                                7 - 12 months
                                             </label>
                                         </div>
                                         <br/>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="homelesshowlong" value="twelvetoeighteen"
-                                                       formControlName="homelesshowlong"> 12 - 18 months
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="homelesshowlong"
+                                                       value="thirteentoeighteen"
+                                                       formControlName="homelesshowlong">
+                                                13 - 18 months
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="homelesshowlong" value="eighteentotwentyfour"
-                                                       formControlName="homelesshowlong"> 18 - 24 months
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="homelesshowlong"
+                                                       value="nineteentotwentyfour"
+                                                       formControlName="homelesshowlong">
+                                                19 - 24 months
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="homelesshowlong"
+                                                       value="morethantwentyfour"
+                                                       formControlName="homelesshowlong">
+                                                More than 24 months
                                             </label>
                                         </div>
                                     </fieldset>
@@ -357,20 +450,26 @@
                             <hr/>
                             <div class="row">
                                 <div class="col-12 col-md-6">
-                                    <label class="col-form-label">Have you ever been evicted?</label>
+                                    <label class="col-form-label">
+                                        Have you ever been evicted?</label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
+                                                <input type="radio"
+                                                       class="form-check-input"
                                                        name="evictedStatus" value="yes"
-                                                       formControlName="evictedStatus"> Yes
+                                                       formControlName="evictedStatus">
+                                                Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="evictedStatus" value="no"
-                                                       formControlName="evictedStatus"> No
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="evictedStatus"
+                                                       value="no"
+                                                       formControlName="evictedStatus">
+                                                No
                                             </label>
                                         </div>
                                     </fieldset>
@@ -380,31 +479,53 @@
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="evictedhowlong" value="zerotosix"
-                                                       formControlName="evictedhowlong"> 0 - 6 months
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="evictedhowlong"
+                                                       value="zerotothree"
+                                                       formControlName="evictedhowlong">
+                                                0 - 3 months
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline pl-2">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="evictedhowlong" value="sixtotwelve"
-                                                       formControlName="evictedhowlong"> 6 - 12 months
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="evictedhowlong"
+                                                       value="fourtosix"
+                                                       formControlName="evictedhowlong">
+                                                4 - 6 months
                                             </label>
                                         </div>
                                         <br/>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="evictedhowlong" value="twelvetoeighteen"
-                                                       formControlName="evictedhowlong"> 12 - 18 months
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="evictedhowlong"
+                                                       value="seventonine"
+                                                       formControlName="evictedhowlong">
+                                                7 - 9 months
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="evictedhowlong" value="eighteentotwentyfour"
-                                                       formControlName="evictedhowlong"> 18 - 24 months
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="evictedhowlong"
+                                                       value="tentotwelve"
+                                                       formControlName="evictedhowlong">
+                                                10 - 12 months
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="evictedhowlong"
+                                                       value="morethantwelve"
+                                                       formControlName="evictedhowlong">
+                                                More than 12 months
                                             </label>
                                         </div>
                                     </fieldset>

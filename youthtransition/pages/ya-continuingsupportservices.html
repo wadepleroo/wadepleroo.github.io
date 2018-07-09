@@ -231,37 +231,49 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label class="col-form-label">
-                                        If the youth is enrolled in a Post-secondary institution, is he/she enrolled in the Educational Training Voucher program (ETV)?
+                                        Apply for medicaid
                                     </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="yes"
-                                                       formControlName="etv"> Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applymedicaid" value="yes"
+                                                       formControlName="applymedicaid">
+                                                &nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> No
+                                                       name="applymedicaid" value="no"
+                                                       formControlName="applymedicaid">
+                                                &nbsp;No
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="requested"
-                                                       formControlName="etv"> Requested
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applymedicaid"
+                                                       value="no"
+                                                       formControlName="applymedicaid">
+                                                &nbsp;Not Applicable
                                             </label>
                                         </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> Not Applicable
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applymedicaid"
+                                                       value="other"
+                                                       formControlName="applymedicaid">
+                                                &nbsp;&nbsp;Other
                                             </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="applymedicaidother">
                                         </div>
+
                                     </fieldset>
                                 </div>
                             </div> <!-- form-row -->
@@ -269,37 +281,51 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label class="col-form-label">
-                                        Has the youth been assisted with applying for Medicaid?
+                                        Locate Mental Health Services
                                     </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="appliedMedicaid" value="yes"
-                                                       formControlName="appliedMedicaid"> Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="locatementalhealth"
+                                                       value="yes"
+                                                       formControlName="locatementalhealth">
+                                                &nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="appliedMedicaid" value="no"
-                                                       formControlName="appliedMedicaid"> No
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="locatementalhealth" value="no"
+                                                       formControlmName="locatementalhealth">
+                                                &nbsp;No
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="appliedMedicaid" value="requested"
-                                                       formControlName="appliedMedicaid"> Requested
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="locatementalhealth"
+                                                       value="no"
+                                                       formControlName="locatementalhealth">
+                                                &nbsp;Not Applicable
                                             </label>
                                         </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="appliedMedicaid" value="no"
-                                                       formControlName="appliedMedicaid"> Not Applicable
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="locatementalhealth"
+                                                       value="other"
+                                                       formControlName="locatementalhealth">
+                                                &nbsp;&nbsp;Other
                                             </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="locatementalhealthother">
                                         </div>
+
                                     </fieldset>
                                 </div>
                             </div> <!-- form-row -->
@@ -307,37 +333,49 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label class="col-form-label">
-                                        Have other health care options been explored?
+                                        Enroll in parenting classes
                                     </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="yes"
-                                                       formControlName="etv"> Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="enrollparentingclasses" value="yes"
+                                                       formControlName="enrollparentingclasses">
+                                                &nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> No
+                                                       name="enrollparentingclasses" value="no"
+                                                       formControlName="enrollparentingclasses">
+                                                &nbsp;No
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="requested"
-                                                       formControlName="etv"> Requested
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="enrollparentingclasses"
+                                                       value="no"
+                                                       formControlName="enrollparentingclasses">
+                                                &nbsp;Not Applicable
                                             </label>
                                         </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> Not Applicable
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="enrollparentingclasses"
+                                                       value="other"
+                                                       formControlName="enrollparentingclasses">
+                                                &nbsp;&nbsp;Other
                                             </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="enrollparentingclassesother">
                                         </div>
+
                                     </fieldset>
                                 </div>
                             </div> <!-- form-row -->
@@ -345,37 +383,51 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label class="col-form-label">
-                                        Have extended permanent connections been made for needed support services (i.e mental health services, Substance Abuse counseling, parenting classes, counseling, financial support).
+                                        Identify and secure transportation
                                     </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="yes"
-                                                       formControlName="etv"> Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="idandsecuretransport"
+                                                       value="yes"
+                                                       formControlName="idandsecuretransport">
+                                                &nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> No
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="idandsecuretransport" value="no"
+                                                       formControlmName="idandsecuretransport">
+                                                &nbsp;No
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="requested"
-                                                       formControlName="etv"> Requested
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="idandsecuretransport"
+                                                       value="no"
+                                                       formControlName="idandsecuretransport">
+                                                &nbsp;Not Applicable
                                             </label>
                                         </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> Not Applicable
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="idandsecuretransport"
+                                                       value="other"
+                                                       formControlName="idandsecuretransport">
+                                                &nbsp;&nbsp;Other
                                             </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="idandsecuretransportother">
                                         </div>
+
                                     </fieldset>
                                 </div>
                             </div> <!-- form-row -->
@@ -383,37 +435,51 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label class="col-form-label">
-                                        Have transportation needs been identified and addressed?
+                                        Apply for SNAP benefits
                                     </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="yes"
-                                                       formControlName="etv"> Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applysnapbenefits" value="yes"
+                                                       formControlName="applysnapbenefits">
+                                                &nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> No
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applysnapbenefits"
+                                                       value="no"
+                                                       formControlName="applysnapbenefits">
+                                                &nbsp;No
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="requested"
-                                                       formControlName="etv"> Requested
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applysnapbenefits"
+                                                       value="no"
+                                                       formControlName="applysnapbenefits">
+                                                &nbsp;Not Applicable
                                             </label>
                                         </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> Not Applicable
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applysnapbenefits"
+                                                       value="other"
+                                                       formControlName="applysnapbenefits">
+                                                &nbsp;&nbsp;Other
                                             </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="applysnapbenefitsother">
                                         </div>
+
                                     </fieldset>
                                 </div>
                             </div> <!-- form-row -->
@@ -421,37 +487,51 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label class="col-form-label">
-                                        Has the youth applied for any available public assistance? (SNAP, TANF,
+                                        Apply for TANF Benefits
                                     </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="yes"
-                                                       formControlName="etv"> Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applytanfbenefits"
+                                                       value="yes"
+                                                       formControlName="applytanfbenefits">
+                                                &nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> No
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applytanfbenefits" value="no"
+                                                       formControlmName="applytanfbenefits">
+                                                &nbsp;No
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="requested"
-                                                       formControlName="etv"> Requested
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applytanfbenefits"
+                                                       value="no"
+                                                       formControlName="applytanfbenefits">
+                                                &nbsp;Not Applicable
                                             </label>
                                         </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> Not Applicable
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applytanfbenefits"
+                                                       value="other"
+                                                       formControlName="applytanfbenefits">
+                                                &nbsp;&nbsp;Other
                                             </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="applytanfbenefitsother">
                                         </div>
+
                                     </fieldset>
                                 </div>
                             </div> <!-- form-row -->
@@ -459,41 +539,211 @@
                             <div class="row">
                                 <div class="col-12">
                                     <label class="col-form-label">
-                                        Housing voucher, daycare voucher, etc)
+                                        Apply for childcare voucher
                                     </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="yes"
-                                                       formControlName="etv"> Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applychildcarevoucher"
+                                                       value="yes"
+                                                       formControlName="applychildcarevoucher">
+                                                &nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> No
+                                                       name="applychildcarevoucher" value="no"
+                                                       formControlName="applychildcarevoucher">
+                                                &nbsp;No
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="requested"
-                                                       formControlName="etv"> Requested
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applychildcarevoucher"
+                                                       value="no"
+                                                       formControlName="applychildcarevoucher">
+                                                &nbsp;Not Applicable
                                             </label>
                                         </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="etv" value="no"
-                                                       formControlName="etv"> Not Applicable
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="applychildcarevoucher"
+                                                       value="other"
+                                                       formControlName="applychildcarevoucher">
+                                                &nbsp;&nbsp;Other
                                             </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="applychildcarevoucherother">
                                         </div>
+
                                     </fieldset>
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        Locate Housing
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="locatehousing"
+                                                       value="yes"
+                                                       formControlName="locatehousing">
+                                                &nbsp;Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="locatehousing" value="no"
+                                                       formControlmName="locatehousing">
+                                                &nbsp;No
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="locatehousing"
+                                                       value="no"
+                                                       formControlName="locatehousing">
+                                                &nbsp;Not Applicable
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="locatehousing"
+                                                       value="other"
+                                                       formControlName="locatehousing">
+                                                &nbsp;&nbsp;Other
+                                            </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="locatehousingother">
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        Schedule Counseling
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="schedulecounseling"
+                                                       value="yes"
+                                                       formControlName="schedulecounseling">
+                                                &nbsp;Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="schedulecounseling" value="no"
+                                                       formControlmName="schedulecounseling">
+                                                &nbsp;No
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="schedulecounseling"
+                                                       value="no"
+                                                       formControlName="schedulecounseling">
+                                                &nbsp;Not Applicable
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="schedulecounseling"
+                                                       value="other"
+                                                       formControlName="schedulecounseling">
+                                                &nbsp;&nbsp;Other
+                                            </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="schedulecounselingother">
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        Other
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="other"
+                                                       value="yes"
+                                                       formControlName="other">
+                                                &nbsp;Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="other" value="no"
+                                                       formControlmName="other">
+                                                &nbsp;No
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="other"
+                                                       value="no"
+                                                       formControlName="other">
+                                                &nbsp;Not Applicable
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="other"
+                                                       value="other"
+                                                       formControlName="other">
+                                                &nbsp;&nbsp;Other
+                                            </label>
+                                            <input type="text" class="form-check-input ml-3 mt-0"
+                                                   formControlName="other">
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+
                             <div class="row">
                                 <div class="col-12 ">
                                     <label class="col-form-label" for="personal.notes">

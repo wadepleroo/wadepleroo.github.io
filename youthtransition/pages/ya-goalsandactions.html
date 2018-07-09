@@ -224,245 +224,459 @@
                 </div>
                 <div class="card d-flex">
                     <div class="card-header">
-                        <h4 class="text-center">Goals & Actions</h4>
+                        <h4 class="text-center">Transitional Living Goals & Actions</h4>
                     </div>
                     <div class="card-body">
                         <form [formGroup]="goalsandactionsForm" (ngSubmit)="onNext()">
                             <div class="row">
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoals"
-                                           class="col-form-label">
-                                        1. Education Goals
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        <h5>Education</h5>
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                           id="goalsandactions.educationGoals" placeholder="Goals"
-                                              formControlName="educationGoals"></textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoalTasks"
+                            </div><!-- Education -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.educationgoals"
+                                           class="col-form-label">
+                                        Short Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                           id="goalsandactions.educationshorttermgoals"
+                                              placeholder="Goals"
+                                              formControlName="educationshorttermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.educationgoalTasks"
                                            class="col-form-label">
                                         Task to Reach Goals
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoalTasks" placeholder="Tasks"
-                                              formControlName="educationGoalTasks"></textarea>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.educationGoalTasks"
+                                              placeholder="Tasks"
+                                              formControlName="educationGoalTasks">
+
+                                    </textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
+                                <div class="col-12 col-md-2">
+                                    <label class="col-form-label"
+                                           for="goalsandactions.educationGoalsCompletionDate">
+                                        Completion Date
+                                    </label>
+                                    <input type="text"
+                                           class="form-control datepicker"
+                                           id="goalsandactions.educationGoalsCompletionDate"
+                                           placeholder="Date" rows="2"
+                                           formControlName="educationGoalsCompletionDate">
+                                    </input>
+                                </div>
+
+                            </div><!-- Education -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.educationlongtermgoals"
+                                           class="col-form-label">
+                                        Long Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.educationlongtermgoals"
+                                              placeholder="Goals"
+                                              formControlName="educationlongtermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
                                     <label for="goalsandactions.educationGoalProgress"
                                            class="col-form-label">
                                         Progress to Goals
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoalProgress" placeholder="Progress"
-                                              formControlName="educationGoalProgress"></textarea>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.educationGoalProgress"
+                                              placeholder="Progress"
+                                              formControlName="educationGoalProgress">
+                                    </textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label class="col-form-label" for="goalsandactions.educationGoalsCompletionDate">
-                                        Completion Date
-                                    </label>
-                                    <input type="text" class="form-control datepicker w-75" id="goalsandactions.educationGoalsCompletionDate"
-                                           placeholder="Completion" rows="2" formControlName="educationGoalsCompletionDate">
-                                    </input>
+                                <div class="col-12 col-md-2">
                                 </div>
 
-                            </div><!-- 1. Education -->
+                            </div><!-- Education -->
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoals"
-                                           class="col-form-label">
-                                        2. Housing Goals
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        <h5>Housing</h5>
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.housingGoals" placeholder="Goals"
-                                              formControlName="housingGoals"></textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.housingGoalTasks"
+                            </div><!-- Housing -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.housingshorttermgoals"
+                                           class="col-form-label">
+                                        Short Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.housingshorttermgoals"
+                                              placeholder="Goals"
+                                              formControlName="housingshorttermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.housinggoaltasks"
                                            class="col-form-label">
                                         Task to Reach Goals
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.housingGoalTasks" placeholder="Tasks"
-                                              formControlName="housingGoalTasks"></textarea>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.housinggoaltasks"
+                                              placeholder="Tasks"
+                                              formControlName="housinggoaltasks">
+
+                                    </textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.housingGoalProgress"
-                                           class="col-form-label">
-                                        Progress to Goals
-                                    </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.housingGoalProgress" placeholder="Progress"
-                                              formControlName="housingGoalProgress"></textarea>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <label class="col-form-label" for="goalsandactions.goalsCompletionDate">
+                                <div class="col-12 col-md-2">
+                                    <label class="col-form-label"
+                                           for="goalsandactions.housinggoalscompletiondate">
                                         Completion Date
                                     </label>
-                                    <input type="text" class="form-control datepicker w-75" id="goalsandactions.housingGoalsCompletionDate"
-                                           placeholder="Completion" rows="2" formControlName="goalsCompletionDate">
+                                    <input type="text"
+                                           class="form-control datepicker"
+                                           id="goalsandactions.housinggoalscompletiondate"
+                                           placeholder="Date" rows="2"
+                                           formControlName="housinggoalscompletiondate">
                                     </input>
                                 </div>
 
-                            </div><!-- 2. Housing -->
+                            </div><!-- Housing -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.housinglongtermgoals"
+                                           class="col-form-label">
+                                        Long Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.housinglongtermgoals"
+                                              placeholder="Goals"
+                                              formControlName="housinglongtermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.housinggoalprogress"
+                                           class="col-form-label">
+                                        Progress to Goals
+                                    </label>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.housinggoalprogress"
+                                              placeholder="Progress"
+                                              formControlName="housinggoalprogress">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                </div>
+
+                            </div><!-- Housing -->
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoals"
-                                           class="col-form-label">
-                                        3. Employment Goals
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        <h5>Employment</h5>
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.employmentGoals" placeholder="Goals"
-                                              formControlName="employmentGoals"></textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.employmentGoalsTasks"
+                            </div><!-- Employment -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.employmentshorttermgoals"
+                                           class="col-form-label">
+                                        Short Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.employmentshorttermgoals"
+                                              placeholder="Goals"
+                                              formControlName="employmentshorttermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.employmentgoaltasks"
                                            class="col-form-label">
                                         Task to Reach Goals
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.employmentGoalsTasks" placeholder="Tasks"
-                                              formControlName="employmentGoalsTasks"></textarea>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.employmentgoaltasks"
+                                              placeholder="Tasks"
+                                              formControlName="employmentgoaltasks">
+
+                                    </textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.employmentGoalProgress"
-                                           class="col-form-label">
-                                        Progress to Goals
-                                    </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.employmentGoalProgress" placeholder="Progress"
-                                              formControlName="employmentGoalProgress"></textarea>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <label class="col-form-label" for="goalsandactions.goalsCompletionDate">
+                                <div class="col-12 col-md-2">
+                                    <label class="col-form-label"
+                                           for="goalsandactions.employmentgoalscompletiondate">
                                         Completion Date
                                     </label>
-                                    <input type="text" class="form-control datepicker w-75"
-                                           id="goalsandactions.employmentGoalsCompletionDate"
-                                           placeholder="Completion" rows="2" formControlName="employmentGoalsCompletionDate">
+                                    <input type="text"
+                                           class="form-control datepicker"
+                                           id="goalsandactions.employmentgoalscompletiondate"
+                                           placeholder="Date" rows="2"
+                                           formControlName="employmentgoalscompletiondate">
                                     </input>
                                 </div>
 
-                            </div><!-- 3. Employment -->
+                            </div><!-- Employment -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.employmentlongtermgoals"
+                                           class="col-form-label">
+                                        Long Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.employmentlongtermgoals"
+                                              placeholder="Goals"
+                                              formControlName="employmentlongtermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.employmentgoalprogress"
+                                           class="col-form-label">
+                                        Progress to Goals
+                                    </label>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.employmentgoalprogress"
+                                              placeholder="Progress"
+                                              formControlName="employmentgoalprogress">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                </div>
+
+                            </div><!-- Employment -->
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoals"
-                                           class="col-form-label">
-                                        4. Transportation Goals
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        <h5>Transportation</h5>
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoals" placeholder="Goals"
-                                              formControlName="educationGoals"></textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoalTasks"
+                            </div><!-- Transportation -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.transportationshorttermgoals"
+                                           class="col-form-label">
+                                        Short Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.transportationshorttermgoals"
+                                              placeholder="Goals"
+                                              formControlName="transportationshorttermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.transportationgoaltasks"
                                            class="col-form-label">
                                         Task to Reach Goals
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoalTasks" placeholder="Tasks"
-                                              id="goalsandactions.educationGoalTasks" placeholder="Tasks"
-                                              formControlName="educationGoalTasks"></textarea>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.transportationgoaltasks"
+                                              placeholder="Tasks"
+                                              formControlName="transportationgoaltasks">
+
+                                    </textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoalProgress"
-                                           class="col-form-label">
-                                        Progress to Goals
-                                    </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoalProgress" placeholder="Progress"
-                                              formControlName="educationGoalProgress"></textarea>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <label class="col-form-label" for="goalsandactions.goalsCompletionDate">
+                                <div class="col-12 col-md-2">
+                                    <label class="col-form-label"
+                                           for="goalsandactions.transportationgoalscompletiondate">
                                         Completion Date
                                     </label>
-                                    <input type="text" class="form-control datepicker w-75" id="goalsandactions.goalsCompletionDate"
-                                           placeholder="Completion" rows="2" formControlName="goalsCompletionDate">
+                                    <input type="text"
+                                           class="form-control datepicker"
+                                           id="goalsandactions.transportationgoalscompletiondate"
+                                           placeholder="Date" rows="2"
+                                           formControlName="transportationgoalscompletiondate">
                                     </input>
                                 </div>
 
-                            </div><!-- 4. Transportation -->
+                            </div><!-- Transportation -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.transportationlongtermgoals"
+                                           class="col-form-label">
+                                        Long Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.transportationlongtermgoals"
+                                              placeholder="Goals"
+                                              formControlName="transportationlongtermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.transportationgoalprogress"
+                                           class="col-form-label">
+                                        Progress to Goals
+                                    </label>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.transportationgoalprogress"
+                                              placeholder="Progress"
+                                              formControlName="transportationgoalprogress">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                </div>
+
+                            </div><!-- Transportation -->
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoals"
-                                           class="col-form-label">
-                                        5. Supportive Connections  Goals
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        <h5>Supportive Connections</h5>
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoals" placeholder="Goals"
-                                              formControlName="educationGoals"></textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoalTasks"
+                            </div><!-- Supportive Connections -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.supportiveshorttermgoals"
+                                           class="col-form-label">
+                                        Short Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.supportiveshorttermgoals"
+                                              placeholder="Goals"
+                                              formControlName="supportiveshorttermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.supportivegoaltasks"
                                            class="col-form-label">
                                         Task to Reach Goals
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoalTasks" placeholder="Tasks"
-                                              formControlName="educationGoalTasks"></textarea>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.supportivegoaltasks"
+                                              placeholder="Tasks"
+                                              formControlName="supportivegoaltasks">
+
+                                    </textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoalProgress"
-                                           class="col-form-label">
-                                        Progress to Goals
-                                    </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoalProgress" placeholder="Progress"
-                                              formControlName="educationGoalProgress"></textarea>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <label class="col-form-label" for="goalsandactions.goalsCompletionDate">
+                                <div class="col-12 col-md-2">
+                                    <label class="col-form-label"
+                                           for="goalsandactions.supportivegoalscompletiondate">
                                         Completion Date
                                     </label>
-                                    <input type="text" class="form-control datepicker w-75" id="goalsandactions.supportiveConnectionsGoalsCompletionDate"
-                                           placeholder="Completion" rows="2" formControlName="goalsCompletionDate">
+                                    <input type="text"
+                                           class="form-control datepicker"
+                                           id="goalsandactions.supportivegoalscompletiondate"
+                                           placeholder="Date" rows="2"
+                                           formControlName="supportivegoalscompletiondate">
                                     </input>
                                 </div>
 
-                            </div><!-- 5. Supportive Connections -->
+                            </div><!-- Supportive Connections -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.supportivelongtermgoals"
+                                           class="col-form-label">
+                                        Long Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.supportivelongtermgoals"
+                                              placeholder="Goals"
+                                              formControlName="supportivelongtermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.supportivegoalprogress"
+                                           class="col-form-label">
+                                        Progress to Goals
+                                    </label>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.supportivegoalprogress"
+                                              placeholder="Progress"
+                                              formControlName="supportivegoalprogress">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                </div>
+
+                            </div><!-- Supportive Connections -->
                             <hr/>
                             <div class="row">
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoals"
-                                           class="col-form-label">
-                                        6. Other
+                                <div class="col-12">
+                                    <label class="col-form-label">
+                                        <h5>Other</h5>
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoals" placeholder="Goals"
-                                              formControlName="educationGoals"></textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoalTasks"
+                            </div><!-- Other -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.othershorttermgoals"
+                                           class="col-form-label">
+                                        Short Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.othershorttermgoals"
+                                              placeholder="Goals"
+                                              formControlName="othershorttermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.othergoaltasks"
                                            class="col-form-label">
                                         Task to Reach Goals
                                     </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoalTasks" placeholder="Tasks"
-                                              formControlName="educationGoalTasks"></textarea>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.othergoaltasks"
+                                              placeholder="Tasks"
+                                              formControlName="othergoaltasks">
+
+                                    </textarea>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <label for="goalsandactions.educationGoalProgress"
-                                           class="col-form-label">
-                                        Progress to Goals
-                                    </label>
-                                    <textarea type="text" class="form-control w-75" rows="3"
-                                              id="goalsandactions.educationGoalProgress" placeholder="Progress"
-                                              formControlName="educationGoalProgress"></textarea>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <label class="col-form-label" for="goalsandactions.goalsCompletionDate">
+                                <div class="col-12 col-md-2">
+                                    <label class="col-form-label"
+                                           for="goalsandactions.othergoalscompletiondate">
                                         Completion Date
                                     </label>
-                                    <input type="text" class="form-control datepicker w-75" id="goalsandactions.goalsCompletionDate"
-                                           placeholder="Completion" rows="2" formControlName="goalsCompletionDate">
+                                    <input type="text"
+                                           class="form-control datepicker"
+                                           id="goalsandactions.othergoalscompletiondate"
+                                           placeholder="Date" rows="2"
+                                           formControlName="othergoalscompletiondate">
                                     </input>
                                 </div>
 
-                            </div><!-- 6. Other -->
+                            </div><!-- Other -->
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.housinglongtermgoals"
+                                           class="col-form-label">
+                                        Long Term Goals
+                                    </label>
+                                    <textarea type="text" class="form-control" rows="3"
+                                              id="goalsandactions.housinglongtermgoals"
+                                              placeholder="Goals"
+                                              formControlName="housinglongtermgoals">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label for="goalsandactions.housinggoalprogress"
+                                           class="col-form-label">
+                                        Progress to Goals
+                                    </label>
+                                    <textarea type="text" class="form-control"
+                                              rows="3"
+                                              id="goalsandactions.housinggoalprogress"
+                                              placeholder="Progress"
+                                              formControlName="housinggoalprogress">
+                                    </textarea>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                </div>
+
+                            </div><!-- Other -->
                             <hr/>
                             <div class="row">
                                 <div class="col-12 ">

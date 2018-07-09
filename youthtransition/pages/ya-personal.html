@@ -230,11 +230,89 @@
                         <form [formGroup]="housingForm" (ngSubmit)="onNext()">
                             <div class="row">
                                 <div class="col-12">
-                                    <label class="col-form-label" for="personal.supportInNext6Months">
+                                    <label class="col-form-label">
                                         What types of support do you hope to receive in the next six months?
+                                        (Check all that apply)
                                     </label>
-                                    <textarea type="text" class="form-control" id="personal.supportInNext6Months"
-                                              placeholder="Reason" rows="2" formControlName="supportInNext6Months">
+                                    <fieldset class="form-group">
+                                        <div class="form-check">
+                                            <label class="form-check-label ">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="goalInNext6Months" value="education"
+                                                       formControlName="goalInNext6Months"> &nbsp;
+                                                &nbsp;Education
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="goalInNext6Months" value="employment"
+                                                       formControlName="goalInNext6Months"> &nbsp;
+                                                &nbsp;Employment
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label ">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="goalInNext6Months" value="parenting"
+                                                       formControlName="goalInNext6Months"> &nbsp;
+                                                &nbsp;Parenting
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="goalInNext6Months" value="mentalhealth"
+                                                       formControlName="goalInNext6Months"> &nbsp;
+                                                &nbsp;Mental Health
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label ">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="goalInNext6Months" value="transportation"
+                                                       formControlName="goalInNext6Months"> &nbsp;
+                                                &nbsp;Transportation
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label ">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="goalInNext6Months"
+                                                       value="medical"
+                                                       formControlName="goalInNext6Months"> &nbsp;
+                                                &nbsp;Medical
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label ">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="goalInNext6Months"
+                                                       value="other"
+                                                       formControlName="goalInNext6Months"> &nbsp;
+                                                &nbsp;Other
+                                            </label>
+                                            <div class="col-6">
+                                                <input type="text" class="form-check-input"
+                                                       formControlName="goalInNext6Monthsother">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="col-form-label"
+                                           for="personal.supportInNext6Months">
+                                        What do the support(s) you listed above look like to you?
+                                    </label>
+                                    <textarea type="text" class="form-control"
+                                              id="personal.supportlookslike"
+                                              placeholder="Reason" rows="2"
+                                              formControlName="supportlookslike">
                                             </textarea>
                                 </div>
                             </div> <!-- form-row -->
@@ -267,6 +345,64 @@
                                     </label>
                                     <textarea type="text" class="form-control" id="personal.currentChallenges"
                                               placeholder="Reason" rows="2" formControlName="currentChallenges">
+                                            </textarea>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label class="col-form-label">
+                                        Do you have transportation?
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="havetransportation" value="yes"
+                                                       formControlName="havetransportation">
+                                                &nbsp;Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="havetransportation" value="no"
+                                                       formControlName="havetransportation">
+                                                &nbsp;No
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                    <label for="personal.havetransportation">
+                                        If Yes, what kind:</label>
+                                    <textarea type="tel" class="form-control"
+                                              id="personal.havetransportation"
+                                              placeholder="Kind of transportation"
+                                              formControlName="havetransportation"
+                                              rows="3"></textarea>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                    <label for="personal.havetransportation">
+                                        If no, what barriers prevent having transportation?</label>
+                                    <textarea type="tel" class="form-control"
+                                              id="personal.transportationbarriers"
+                                              placeholder="Transportation barriers"
+                                              formControlName="transportationbarriers"
+                                              rows="3"></textarea>
+                                </div>
+                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                    <label class="col-form-label"
+                                           for="personal.transportationplan">
+                                        If no transportation, what is your transportation plan?
+                                    </label>
+                                    <textarea type="text" class="form-control"
+                                              id="personal.transportationplan"
+                                              placeholder="Transportation Plan"
+                                              rows="2" formControlName="transportationplan">
                                             </textarea>
                                 </div>
                             </div> <!-- form-row -->

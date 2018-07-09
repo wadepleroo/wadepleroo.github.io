@@ -424,6 +424,116 @@
                                 </div>
                             </div>
                             <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>Please indicate if you are receiving the following ongoing stipends</p>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <h4 class="col-form-label pt-3">
+                                        Life Skill Participation
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label class="col-form-label">
+                                        Stipend Requested?
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="lifeskillparticipation" value="yes"
+                                                       formControlName="lifeskillparticipation">
+                                                &nbsp;&nbsp;Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="lifeskillparticipation" value="no"
+                                                       formControlName="lifeskillparticipation">
+                                                &nbsp;&nbsp;No
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio" class="form-check-input"
+                                                       name="lifeskillparticipation" value="other"
+                                                       formControlName="lifeskillparticipation">
+                                                &nbsp;&nbsp;Other
+                                                <input type="text" class="form-check-input ml-3 mt-0"
+                                                       formControlName="lifeskillparticipationother">
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label for="stipends.seniorStipendRequestDate"
+                                           class="col-form-label">Request Date</label>
+                                    <input type="text" class="form-control form-control-sm datepicker w-50"
+                                           id="stipends.lifeskillparticipationdate" placeholder="Date"
+                                           formControlName="lifeskillparticipationdate">
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <h4 class="col-form-label pt-3">
+                                        Personal Enhancement
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label class="col-form-label">
+                                        Stipend Requested?
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="personalenhancement"
+                                                       value="yes"
+                                                       formControlName="personalenhancement">
+                                                &nbsp;&nbsp;Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="personalenhancement"
+                                                       value="no"
+                                                       formControlName="personalenhancement">
+                                                &nbsp;&nbsp;No
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check">
+                                            <label class="form-check-label d-block">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="personalenhancement"
+                                                       value="other"
+                                                       formControlName="personalenhancement">
+                                                &nbsp;&nbsp;Other
+                                                <input type="text" class="form-check-input ml-3 mt-0"
+                                                       formControlName="personalenhancementother">
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-4 pt-2">
+                                    <label for="stipends.seniorStipendRequestDate"
+                                           class="col-form-label">Request Date</label>
+                                    <input type="text" class="form-control form-control-sm datepicker w-50"
+                                           id="stipends.personalenhancementdate" placeholder="Date"
+                                           formControlName="personalenhancementdate">
+                                </div>
+                            </div>
+                            <hr/>
 
                             <a class="btn btn-outline-primary float-left" href="./ya-lifeskills.html">
                                 <!--<i class="fa fa-home fa-fw" style="font-size: 20px;"></i>-->
