@@ -285,6 +285,26 @@
                                                     &nbsp;Vocational Training
                                                 </label>
                                             </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio"
+                                                           class="form-check-input"
+                                                           name="highesteducationlevel"
+                                                           value="associatesdegree"
+                                                           formControlName="highesteducationlevel">
+                                                    &nbsp;Associate's Degree
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio"
+                                                           class="form-check-input"
+                                                           name="highesteducationlevel"
+                                                           value="bachelorsdegree"
+                                                           formControlName="highesteducationlevel">
+                                                    &nbsp;Bachelor's Degree
+                                                </label>
+                                            </div>
                                             <!--<div class="form-check">-->
                                                 <!--<label class="form-check-label col-3">-->
                                                     <!--<input type="radio" class="form-check-input form-check-input-inline"-->
@@ -320,7 +340,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <label for="education.currentlyenrolledat" class="pr-2">
-                                            If yes, choose one</label><br/>
+                                            If yes, select one of the following</label><br/>
                                         <fieldset class="form-group">
                                             <div class="form-check">
                                                 <label class="form-check-label col-4 pt-2">
@@ -441,7 +461,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <label class="col-form-label">
-                                            During past 6 months what grades have you earned?
+                                            During past six (6) months what type of grades have you earned?
                                             (check all that apply)
                                         </label>
                                         <fieldset class="form-group">
@@ -585,6 +605,39 @@
                                             </div>
 
                                         </fieldset>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <hr/>
+                                <!-- State Level tests -->
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <label class="col-form-label">
+                                            Have you taken any State Level tests?
+                                        </label>
+                                        <fieldset class="form-group">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio"
+                                                           class="form-check-input"
+                                                           name="takenstateleveltests"
+                                                           value="yes"
+                                                           formControlName="takenstateleveltests">
+                                                    Yes
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio"
+                                                           class="form-check-input"
+                                                           name="takenstateleveltests"
+                                                           value="notpassed"
+                                                           formControlName="takenstateleveltests">
+                                                    No
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-12 col-md-6">
                                     </div>
                                 </div> <!-- form-row -->
                                 <hr/>
@@ -1519,9 +1572,10 @@
                                 </div>
                                 <hr/>
 
-                                <a class="btn btn-outline-primary float-left" href="./ya-housing.html">
+                                <a class="btn btn-outline-primary float-left"
+                                   href="./ya-demographics.html">
                                     <!--<i class="fa fa-home fa-fw" style="font-size: 20px;"></i>-->
-                                    Previous: Housing
+                                    Previous: Demographics
                                 </a>
                                 <!-- ***Note: the above link is just for html demo below is for submission to Angular
                                 <button type="submit" class="btn btn-outline-primary float-right" >

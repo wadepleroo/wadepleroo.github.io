@@ -293,16 +293,20 @@
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="custodystatus" value="yes"
-                                                       formControlName="custodystatus"> Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="custodystatus" value="active"
+                                                       formControlName="custodystatus">
+                                                Active
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="custodystatus" value="no"
-                                                       formControlName="custodystatus"> No
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="custodystatus" value="nonactive"
+                                                       formControlName="custodystatus">
+                                                Non-active
                                             </label>
                                         </div>
                                     </fieldset>
@@ -319,7 +323,7 @@
                             <!-- Address -->
                             <div class="row">
                                 <div class="col-12">
-                                    <label for="demographics.address">Address</label>
+                                    <label for="demographics.address">Current Address</label>
                                     <textarea class="form-control form-control-sm"
                                               id="demographics.address" placeholder="Address"
                                               rows="3" formControlName="address">
@@ -362,20 +366,87 @@
                                                        formControlName="LGBTQ"> No
                                             </label>
                                         </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="LGBTQ" value="declined"
+                                                       formControlName="LGBTQ"> Declined
+                                            </label>
+                                        </div>
                                     </fieldset>
                                 </div>
                                 <div class="col-12 col-6 pt-2 pt-md-0">
                                     <label for="demographics.LGBTQType" class="pr-2">If Yes, Please Select</label>
-                                    <select class="custom-select form-control form-control-sm"
-                                            id="demographics.LGBTQType">
-                                        <option selected>Choose Category</option>
-                                        <option value="lesbian">Lesbian</option>
-                                        <option value="gay">Gay</option>
-                                        <option value="bisexual">Bi-sexual</option>
-                                        <option value="transgender">Transgender</option>
-                                        <option value="questioning">Questioning</option>
-                                        <option value="declined">Declined</option>
-                                    </select>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                       class="form-check-input"
+                                                       name="LGBTQType"
+                                                       value="lesbian"
+                                                       formControlName="LGBTQType">
+                                                &nbsp;Lesbian
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                       class="form-check-input"
+                                                       name="LGBTQType"
+                                                       value="gay"
+                                                       formControlName="LGBTQType">
+                                                &nbsp;Gay
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                       class="form-check-input"
+                                                       name="LGBTQType"
+                                                       value="bisexual"
+                                                       formControlName="LGBTQType">
+                                                &nbsp;Bisexual
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                       class="form-check-input"
+                                                       name="LGBTQType"
+                                                       value="transgender"
+                                                       formControlName="LGBTQType">
+                                                &nbsp;Transgender
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                       class="form-check-input"
+                                                       name="LGBTQType"
+                                                       value="questioning"
+                                                       formControlName="LGBTQType">
+                                                &nbsp;Questioning
+                                            </label>
+                                        </div>
+                                        <br/>
+                                        <div class="form-check form-check-inline">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input"
+                                                               name="needhelpinsubject" value="other"
+                                                               formControlName="needhelpinsubject">  &nbsp;
+                                                        Other
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-check-input"
+                                                           formControlName="otherhelpneeded">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
@@ -536,9 +607,10 @@
                             </div> <!-- form-row -->
                             <hr/>
 
-                            <a class="btn btn-outline-primary float-right" href="./ya-housing.html">
+                            <a class="btn btn-outline-primary float-right"
+                               href="./ya-education.html">
                                 <!--<i class="fa fa-home fa-fw" style="font-size: 20px;"></i>-->
-                                Next: Housing
+                                Next: Education
                             </a>
                             <!-- ***Note: the above link is just for html demo below is for submission to Angular
                             <button type="submit" class="btn btn-outline-primary float-right" >

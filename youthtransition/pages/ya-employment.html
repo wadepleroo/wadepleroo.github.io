@@ -230,7 +230,9 @@
                         <form [formGroup]="employmentForm" (ngSubmit)="onNext()">
                             <div class="row">
                                 <div class="col-12 col-md-6">
-                                    <label class="col-form-label">Are you disabled preventing you from working?</label>
+                                    <label class="col-form-label">
+                                        Do you have a disabiliy preventing you from working?
+                                    </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
@@ -248,26 +250,49 @@
                                                 &nbsp;No
                                             </label>
                                         </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-md-6 pt-2 pt-md-0">
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label class="col-form-label">
+                                        If yes, which types of benefits are you receiving?
+                                    </label>
+                                    <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="workDisabled" value="ssi"
-                                                       formControlName="workDisabled">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="disablityTypes" value="ssi"
+                                                       formControlName="disablityTypes">
                                                 &nbsp;SSI
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                        <label class="form-check-label">
-                                            <input type="radio" class="form-check-input"
-                                                   name="workDisabled" value="SSA"
-                                                   formControlName="workDisabled">
-                                            &nbsp;SSA
-                                        </label>
-                                    </div>
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="disablityTypes" value="SSA"
+                                                       formControlName="disablityTypes">
+                                                &nbsp;SSA
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="disablityTypes" value="none"
+                                                       formControlName="disablityTypes">
+                                                &nbsp;None
+                                            </label>
+                                        </div>
                                     </fieldset>
                                 </div>
                                 <div class="col-12 col-md-6 pt-2 pt-md-0">
-                                    <label for="employment.explainWorkDisabled">Explain:</label>
+                                    <label for="employment.explainWorkDisabled">
+                                        If yes to disability, please explain:
+                                    </label>
                                     <input type="tel" class="form-control" id="employment.explainWorkDisabled"
                                            placeholder="Explain Work Disabled"
                                            formControlName="explainWorkDisabled">
@@ -373,7 +398,6 @@
                                             </div>
                                             </div>
                                         </div>
-
                                     </fieldset>
                                 </div>
                             </div> <!-- form-row -->
@@ -437,6 +461,26 @@
                                                        formControlName="evictedhowlong"> 19 - 24 months
                                             </label>
                                         </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="evictedhowlong"
+                                                       value="nineteentotwentyfour"
+                                                       formControlName="evictedhowlong">
+                                                19 - 24 months
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="evictedhowlong"
+                                                       value="over24months"
+                                                       formControlName="evictedhowlong">
+                                                over 24 months
+                                            </label>
+                                        </div>
                                     </fieldset>
                                 </div>
                                 <div class="col-12 col-md-4 pt-2 pt-md-0">
@@ -444,16 +488,32 @@
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="inBenefitProgram" value="yes"
-                                                       formControlName="inBenefitProgram"> &nbsp;Yes
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="inBenefitProgram"
+                                                       value="yes"
+                                                       formControlName="inBenefitProgram">
+                                                &nbsp;Yes
                                             </label>
                                         </div>
                                         <div class="form-check form-check-inline pl-2">
                                             <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="inBenefitProgram" value="no"
-                                                       formControlName="inBenefitProgram"> &nbsp;No
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="inBenefitProgram"
+                                                       value="no"
+                                                       formControlName="inBenefitProgram">
+                                                &nbsp;No
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline pl-2">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                       class="form-check-input"
+                                                       name="inBenefitProgram"
+                                                       value="na"
+                                                       formControlName="inBenefitProgram">
+                                                &nbsp;N/A
                                             </label>
                                         </div>
                                     </fieldset>
