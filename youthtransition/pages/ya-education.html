@@ -65,163 +65,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 collapse" id="navsidebarNav">
-                    <!-- Sidebar Holder -->
-                    <nav class="mt-2" id="sidebar">
-                        <div>
-                            <h4>Pages</h4>
-                            <ul class="navbar-nav ">
-                                <li class="nav-item">
-                                    <a class="nav-link " href="ya-demographics.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Demographics
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-housing.html">
-                                        <!--<i class="fa fa-home fa-fw" style="font-size: 20px;"></i>-->
-                                        Housing
-                                    </a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="ya-education.html">
-                                        <!--<i class="fa fa-school fa-fw" style="font-size: 20px;"></i>-->
-                                        Education
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-employment.html">
-                                        <!--<i class="fa fa-toolbox fa-fw" style="font-size: 20px;"></i>-->
-                                        Employment
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-socialinterests.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Social Interests
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-placementandsafety.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Placement & Safety
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-pregnantparenting.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Pregnant / Parenting
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-health.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Health
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-relationships.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Relationships
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-criminaljusticesystem.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Criminal Justice System
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-lifeskills.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Life Skills
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-stipends.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Stipends
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-continuingsupportservices.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Continuing Support/Services
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-personal.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Personal
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-goalsandactions.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Goals and Actions
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-receiveddocuments.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Received Documents
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./ya-reviewandsign.html">
-                                        <!--<i class="fa fa-user fa-fw" style="font-size: 20px;"></i>-->
-                                        Review & Sign
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
                 </div>
                 <div class="col ml-auto">
-                    <div class="card d-flex">
-                        <div class="card-header">
-                            <div class="container">
-                                <div class="row ">
-                                    <button class="col-sm-3  navbar-light navbar-toggler "
-                                            data-toggle="collapse" href="#navsidebarNav"
-                                            aria-expanded="false" aria-controls="navsidebarNav">
-                                        <span class="navbar-light navbar-toggler-icon"></span>
-                                    </button>
-                                    <h4 class="col-sm-6 text-center">
-                                        Youth Appraisal
-                                    </h4>
-                                    <div class="col-sm-3"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <form [formGroup]="headerForm" (ngSubmit)="onNext()">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-4">
-                                        <label for="header.youthName">Youth Name</label>
-                                        <input class="form-control form-control-sm"
-                                               id="header.youthName" placeholder="Enter Youth Name"
-                                               formControlName="youthName">
-                                    </div>
-                                    <div class="col-xs-12 col-md-2 pt-2 pt-md-0">
-                                        <label for="header.youthId">Id</label>
-                                        <input type="text" class="form-control form-control-sm"
-                                               id="header.youthId" placeholder="Id"
-                                               formControlName="youthId">
-                                    </div>
-                                    <div class="col-xs-12 col-md-3 pt-2 pt-md-0">
-                                        <label for="header.appraisalDate">Appraisal Date</label>
-                                        <p id="header.appraisalDate" name="appraisalDate">5/17/2018</p>
-                                    </div>
-                                    <div class="col-xs-12 col-md-3 pt-2 pt-md-0">
-                                        <label for="header.status">Status</label>
-                                        <p class="w-100" id="header.status" name="status">In Progress</p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                    <div class="card d-flex" id="youthHeaderViewOnly">
                     </div>
-                    <div class="card d-flex">
+                    <div class="card d-flex" id="educationView">
                         <div class="card-header">
                             <h4 class="text-center">Education</h4>
                         </div>
@@ -317,6 +165,33 @@
                                     </div>
                                 </div> <!-- form-row -->
                                 <hr/>
+                                <!-- Have you been in treatment facility -->
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <label class="col-form-label">
+                                            Have you been in a treatment facility in the past 90 days?
+                                        </label>
+                                        <fieldset class="form-group">
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="treatmentLast90Days" value="yes"
+                                                           formControlName="treatmentLast90Days"> Yes
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="treatmentLast90Days" value="no"
+                                                           formControlName="treatmentLast90Days"> No
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                    </div>
+                                </div> <!-- form-row -->
+                                <hr/>
                                 <!-- Are you currently enrolled Education -->
                                 <div class="row">
                                     <div class="col-12 col-md-6">
@@ -339,41 +214,335 @@
                                         </fieldset>
                                     </div>
                                     <div class="col-12 col-md-6">
+                                    </div>
+                                </div> <!-- form-row -->
+                                <hr/>
+                                <!-- If yes select one -->
+                                <div class="row">
+                                    <div class="col-12">
                                         <label for="education.currentlyenrolledat" class="pr-2">
                                             If yes, select one of the following</label><br/>
                                         <fieldset class="form-group">
-                                            <div class="form-check">
-                                                <label class="form-check-label col-4 pt-2">
-                                                    <input type="radio"
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label col-12 pt-2">
+                                                        <input type="radio"
                                                            class="form-check-input form-check-input-inline"
                                                            name="currentlyenrolledat" value="middleschool"
                                                            formControlName="currentlyenrolledat">  &nbsp;
-                                                    Middle School
-                                                </label>
-                                                <input type="text" class="form-check-input "
-                                                       placeholder="Grade"
+                                                        Middle School
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-check-input "
+                                                       placeholder="Middle School Grade"
                                                        formControlName="currentmiddleschoolgrade">
+                                                </div>
                                             </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label col-4 pt-2">
-                                                    <input type="radio"
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label col-4 pt-2">
+                                                         <input type="radio"
                                                            class="form-check-input form-check-input-inline"
                                                            name="currentlyenrolledat" value="highschool"
                                                            formControlName="currentlyenrolledat">  &nbsp;
-                                                    High School
+                                                            High School
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                        <input type="text" class="form-check-input"
+                                                            placeholder="High School Grade"
+                                                            formControlName="currenthighschoolgrade">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label col-4 pt-2">
+                                                            <input type="radio"
+                                                                   class="form-check-input form-check-input-inline"
+                                                                   name="currentlyenrolledat" value="homeSchool"
+                                                                   formControlName="currentlyenrolledat">  &nbsp;
+                                                            Home School
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-check-input"
+                                                           placeholder="Home School Grade"
+                                                           formControlName="currenthighschoolgrade">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label col-4 pt-2">
+                                                            <input type="radio"
+                                                                   class="form-check-input form-check-input-inline"
+                                                                   name="currentlyenrolledat" value="GED"
+                                                                   formControlName="currentlyenrolledat">  &nbsp;
+                                                            GED
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-check-input datepicker"
+                                                           placeholder="GED Expected Test Date"
+                                                           formControlName="expectedgedtestdate">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label col-4 pt-2">
+                                                            <input type="radio"
+                                                                   class="form-check-input form-check-input-inline"
+                                                                   name="currentlyenrolledat" value="vocational"
+                                                                   formControlName="currentlyenrolledat">  &nbsp;
+                                                            Vocational
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label col-12 pt-2">
+                                                            <input type="radio"
+                                                                   class="form-check-input form-check-input-inline"
+                                                                   name="currentlyenrolledat" value="occupationalcertificate"
+                                                                   formControlName="currentlyenrolledat">  &nbsp;
+                                                            Occupational Certificate
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label col-4 pt-2">
+                                                            <input type="radio"
+                                                                   class="form-check-input form-check-input-inline"
+                                                                   name="currentlyenrolledat" value="postsecondary"
+                                                                   formControlName="currentlyenrolledat">  &nbsp;
+                                                            Post-Secondary
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <fieldset class="form-group">
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio"
+                                                                       class="form-check-input"
+                                                                       name="postSecType" value="freshman"
+                                                                       formControlName="postSecType">
+                                                                Freshman
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio"
+                                                                       class="form-check-input"
+                                                                       name="postSecType" value="sophmore"
+                                                                       formControlName="postSecType">
+                                                                Sophmore
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                       name="postSecType" value="junior"
+                                                                       formControlName="postSecType">
+                                                                Junior
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                       name="postSecType" value="senior"
+                                                                       formControlName="postSecType">
+                                                                Senior
+                                                            </label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <hr/>
+                                <!-- Have you been expelled or suspended -->
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <label class="col-form-label">
+                                            Have you been suspended or expelled from school in the past year?
+                                        </label>
+                                        <fieldset class="form-group">
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="suspendedLastYear" value="yes"
+                                                           formControlName="suspendedLastYear"> Yes
                                                 </label>
-                                                <input type="text" class="form-check-input"
-                                                       placeholder="Grade"
-                                                       formControlName="currenthighschoolgrade">
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="suspendedLastYear" value="no"
+                                                           formControlName="suspendedLastYear"> No
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                    </div>
+                                </div> <!-- form-row -->
+                                <hr/>
+                                <!-- Opinion: School Waste of time -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label class="col-form-label">
+                                            I think school is a waste of time
+                                        </label>
+                                        <fieldset class="form-group">
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_waste" value="stronglydisagree"
+                                                           formControlName="opinion_waste">
+                                                    Strongly Disagree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_waste" value="disagree"
+                                                           formControlName="opinion_waste">
+                                                    Disagree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_waste" value="agree"
+                                                           formControlName="opinion_waste">
+                                                    Agree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_waste" value="stronglyagree"
+                                                           formControlName="opinion_waste">
+                                                    Strongly Agree
+                                                </label>
                                             </div>
                                         </fieldset>
                                     </div>
                                 </div> <!-- form-row -->
                                 <hr/>
-                            <!-- Currently Enrolled -->
+                                <!-- Opinion: Important to make good grades -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label class="col-form-label">
+                                            It's important to me to make good grades
+                                        </label>
+                                        <fieldset class="form-group">
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_makegoodgrades" value="stronglydisagree"
+                                                           formControlName="opinion_makegoodgrades">
+                                                    Strongly Disagree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_makegoodgrades" value="disagree"
+                                                           formControlName="opinion_makegoodgrades">
+                                                    Disagree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_makegoodgrades" value="agree"
+                                                           formControlName="opinion_makegoodgrades">
+                                                    Agree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_makegoodgrades" value="stronglyagree"
+                                                           formControlName="opinion_makegoodgrades">
+                                                    Strongly Agree
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <hr/>
+                                <!-- Opinion: Education Important -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label class="col-form-label">
+                                            I believe education is important for my success
+                                        </label>
+                                        <fieldset class="form-group">
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_educationimportant" value="stronglydisagree"
+                                                           formControlName="opinion_learningnewthings">
+                                                    Strongly Disagree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_educationimportant" value="disagree"
+                                                           formControlName="opinion_educationimportant">
+                                                    Disagree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_educationimportant" value="agree"
+                                                           formControlName="opinion_educationimportant">
+                                                    Agree
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input"
+                                                           name="opinion_educationimportant" value="stronglyagree"
+                                                           formControlName="opinion_educationimportant">
+                                                    Strongly Agree
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <hr/>
+
+                                <!-- Currently Enrolled -->
                             <div class="row">
                                 <div class="col-12 ">
-                                    Currently Enrolled in High School or Middle School
+                                    Currently Enrolled in High School or Middle School or Home School
                                 </div> <!-- col-12 -->
                             </div> <!-- form-row -->
                             <hr/>
@@ -381,7 +550,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <label class="col-form-label">
-                                        Do you have an IEP ruling?
+                                        Do you have an IEP ruling or 504 plan?
                                     </label>
                                     <fieldset class="form-group">
                                         <div class="form-check form-check-inline">
@@ -401,6 +570,25 @@
                                     </fieldset>
                                 </div>
                                 <div class="col-12 col-md-6">
+                                    <label class="col-form-label">
+                                        Do you have a Behaviour Intervention Plan (BID)?
+                                    </label>
+                                    <fieldset class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="bidplan" value="yes"
+                                                       formControlName="bidplan"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input"
+                                                       name="bidplan" value="no"
+                                                       formControlName="bidplan"> No
+                                            </label>
+                                        </div>
+                                    </fieldset>
                                 </div>
                             </div> <!-- form-row -->
                             <hr/>
@@ -469,45 +657,45 @@
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="gradeslastsix"
-                                                           value="a_and_b"
+                                                           value="aGrades"
                                                            formControlName="gradeslastsix">
-                                                    &nbsp;A's and B's
+                                                    &nbsp;A's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="gradeslastsix"
-                                                           value="b_and_c"
+                                                           value="bGrades"
                                                            formControlName="gradeslastsix">
-                                                    &nbsp;B's and C's
+                                                    &nbsp;B's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="gradeslastsix"
-                                                           value="c_and_d"
+                                                           value="cGrades"
                                                            formControlName="gradeslastsix">
-                                                    &nbsp;C's and D's
+                                                    &nbsp;C's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="gradeslastsix"
-                                                           value="d_and_f"
+                                                           value="dGrades"
                                                            formControlName="gradeslastsix">
-                                                    &nbsp;D's and F's
+                                                    &nbsp;D's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="gradeslastsix"
-                                                           value="mostly_f"
+                                                           value="fGrades"
                                                            formControlName="gradeslastsix">
-                                                    &nbsp;Mostly F's
+                                                    &nbsp;F's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
@@ -711,214 +899,14 @@
                                     </div>
                                 </div> <!-- form-row -->
                                 <hr/>
+                                <!-- Currently Enrolled -->
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        Post-Secondary Section
+                                    </div> <!-- col-12 -->
+                                </div> <!-- form-row -->
+                                <hr/>
 
-                                <!-- Dual Enrollment -->
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <label class="col-form-label">Dual Enrollment?</label>
-                                    <fieldset class="form-group">
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="dualenrollment" value="yes"
-                                                       formControlName="dualenrollment"> Yes
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="dualenrollment" value="no"
-                                                       formControlName="dualenrollment"> No
-                                            </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label class="col-form-label" for="education.duelEnrollmentExplain">
-                                        Which types of Dual Enrollment are you enrolled in?
-                                    </label>
-                                    <fieldset class="form-group">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input"
-                                                       name="dualenrollmenttypes"
-                                                       value="highschoolandcollege"
-                                                       formControlName="dualenrollmenttypes">
-                                                &nbsp;High School and College
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input"
-                                                       name="dualenrollmenttypes"
-                                                       value="gedandcollege"
-                                                       formControlName="dualenrollmenttypes">
-                                                &nbsp;GED and College(MI BEST) I
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input"
-                                                       name="dualenrollmenttypes"
-                                                       value="highschoolandvocational"
-                                                       formControlName="dualenrollmenttypes">
-                                                &nbsp;High School and Vocational
-                                            </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div> <!-- form-row -->
-                            <hr/>
-                                <!-- GED -->
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <label class="col-form-label">GED?</label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="ged" value="yes"
-                                                           formControlName="ged"> Yes
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="ged" value="no"
-                                                           formControlName="ged"> No
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <label class="col-form-label" for="education.duelEnrollmentExplain">
-                                            GED Progress </label>
-                                        <textarea type="text" class="form-control"
-                                                  id="education.gedProgress"
-                                                  placeholder="Reason" rows="2" formControlName="gedProgress">
-                                            </textarea>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <label class="col-form-label" for="education.gedExpectedTestDate">
-                                            Expected Test Date </label>
-                                        <input type="text" class="form-control datepicker" id="education.gedExpectedTestDate"
-                                                  placeholder="Reason" rows="2" formControlName="gedExpectedTestDate">
-                                            </input>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Vocational -->
-                                <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <label class="col-form-label">Vocational?</label>
-                                    <fieldset class="form-group">
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="vocoational" value="yes"
-                                                       formControlName="vocoational"> Yes
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="vocoational" value="no"
-                                                       formControlName="vocoational"> No
-                                            </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                </div>
-                            </div> <!-- form-row -->
-                            <hr/>
-                                <!-- Occupational Certificate -->
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <label class="col-form-label">Occupational Certificate?</label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="occupationalcert" value="yes"
-                                                           formControlName="occupationalcert"> Yes
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="occupationalcert" value="no"
-                                                           formControlName="occupationalcert"> No
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                    </div>
-                                </div> <!-- form-row -->
-                            <hr/>
-                                <!-- Post Secondary Education -->
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <label class="col-form-label">Post Secondary Education?</label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="postSecondary" value="yes"
-                                                           formControlName="postSecondary"> Yes
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="postSecondary" value="no"
-                                                           formControlName="postSecondary"> No
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="col-form-label">Type?</label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio"
-                                                           class="form-check-input"
-                                                           name="postSecType" value="freshman"
-                                                           formControlName="postSecType">
-                                                    Freshman
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio"
-                                                           class="form-check-input"
-                                                           name="postSecType" value="sophmore"
-                                                           formControlName="postSecType">
-                                                    Sophmore
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="postSecType" value="junior"
-                                                           formControlName="postSecType">
-                                                    Junior
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="postSecType" value="senior"
-                                                           formControlName="postSecType">
-                                                    Senior
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
                             <!-- ETV -->
                             <div class="row">
                                 <div class="col-12 col-md-6">
@@ -961,45 +949,45 @@
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="etvgradeslastsix"
-                                                           value="a_and_b"
+                                                           value="aGrades"
                                                            formControlName="etvgradeslastsix">
-                                                    &nbsp;A's and B's
+                                                    &nbsp;A's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="etvgradeslastsix"
-                                                           value="b_and_c"
+                                                           value="bGrades"
                                                            formControlName="etvgradeslastsix">
-                                                    &nbsp;B's and C's
+                                                    &nbsp;B's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="etvgradeslastsix"
-                                                           value="c_and_d"
+                                                           value="cGrades"
                                                            formControlName="etvgradeslastsix">
-                                                    &nbsp;C's and D's
+                                                    &nbsp;C's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="etvgradeslastsix"
-                                                           value="d_and_f"
+                                                           value="dGrades"
                                                            formControlName="etvgradeslastsix">
-                                                    &nbsp;D's and F's
+                                                    &nbsp;D's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
                                                     <input type="checkbox" class="form-check-input"
                                                            name="etvgradeslastsix"
-                                                           value="mostly_f"
+                                                           value="fGrades"
                                                            formControlName="etvgradeslastsix">
-                                                    &nbsp;Mostly F's
+                                                    &nbsp;F's
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
@@ -1147,418 +1135,8 @@
                                     </div>
                                 </div>
                                 <hr/>
-                                <!-- Currently Enrolled -->
-                                <div class="row">
-                                    <div class="col-12 ">
-                                        <h4>Opinions</h4>
-                                    </div> <!-- col-12 -->
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Opinion: School Waste of time -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="col-form-label">
-                                            I think school is a waste of time
-                                        </label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_waste" value="stronglydisagree"
-                                                           formControlName="opinion_waste">
-                                                    Strongly Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_waste" value="disagree"
-                                                           formControlName="opinion_waste">
-                                                    Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_waste" value="agree"
-                                                           formControlName="opinion_waste">
-                                                    Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_waste" value="stronglyagree"
-                                                           formControlName="opinion_waste">
-                                                    Strongly Agree
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Opinion: Like Learning -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="col-form-label">
-                                            I like learning new things
-                                        </label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_learningnewthings" value="stronglydisagree"
-                                                           formControlName="opinion_learningnewthings">
-                                                    Strongly Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_learningnewthings" value="disagree"
-                                                           formControlName="opinion_learningnewthings">
-                                                    Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_learningnewthings" value="agree"
-                                                           formControlName="opinion_learningnewthings">
-                                                    Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_learningnewthings" value="stronglyagree"
-                                                           formControlName="opinion_learningnewthings">
-                                                    Strongly Agree
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Opinion: Like Going to School -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="col-form-label">
-                                            I like going to school
-                                        </label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_likegoing" value="stronglydisagree"
-                                                           formControlName="opinion_likegoing">
-                                                    Strongly Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_likegoing" value="disagree"
-                                                           formControlName="opinion_likegoing">
-                                                    Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_likegoing" value="agree"
-                                                           formControlName="opinion_likegoing">
-                                                    Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_likegoing" value="stronglyagree"
-                                                           formControlName="opinion_likegoing">
-                                                    Strongly Agree
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Opinion: Prepare for tests -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="col-form-label">
-                                            I prepart for upcoming tests/exams
-                                        </label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_preparefortests" value="stronglydisagree"
-                                                           formControlName="opinion_preparefortests">
-                                                    Strongly Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_preparefortests" value="disagree"
-                                                           formControlName="opinion_preparefortests">
-                                                    Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_preparefortests" value="agree"
-                                                           formControlName="opinion_preparefortests">
-                                                    Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_preparefortests" value="stronglyagree"
-                                                           formControlName="opinion_preparefortests">
-                                                    Strongly Agree
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Opinion: Complete Assigned Work -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="col-form-label">
-                                            I complete all work assigned to me
-                                        </label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_finishassignedwork" value="stronglydisagree"
-                                                           formControlName="opinion_finishassignedwork">
-                                                    Strongly Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_finishassignedwork" value="disagree"
-                                                           formControlName="opinion_finishassignedwork">
-                                                    Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_finishassignedwork" value="agree"
-                                                           formControlName="opinion_finishassignedwork">
-                                                    Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_finishassignedwork" value="stronglyagree"
-                                                           formControlName="opinion_finishassignedwork">
-                                                    Strongly Agree
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Opinion: Important to make good grades -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="col-form-label">
-                                            It's important to me to make good grades
-                                        </label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_makegoodgrades" value="stronglydisagree"
-                                                           formControlName="opinion_makegoodgrades">
-                                                    Strongly Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_makegoodgrades" value="disagree"
-                                                           formControlName="opinion_makegoodgrades">
-                                                    Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_makegoodgrades" value="agree"
-                                                           formControlName="opinion_makegoodgrades">
-                                                    Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_makegoodgrades" value="stronglyagree"
-                                                           formControlName="opinion_makegoodgrades">
-                                                    Strongly Agree
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Opinion: Trouble Concentrating -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="col-form-label">
-                                            I have trouble concentrating in class
-                                        </label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_troubleconcentrating"
-                                                           value="stronglydisagree"
-                                                           formControlName="opinion_troubleconcentrating">
-                                                    Strongly Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_troubleconcentrating" value="disagree"
-                                                           formControlName="opinion_troubleconcentrating">
-                                                    Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_troubleconcentrating" value="agree"
-                                                           formControlName="opinion_troubleconcentrating">
-                                                    Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_troubleconcentrating" value="stronglyagree"
-                                                           formControlName="opinion_troubleconcentrating">
-                                                    Strongly Agree
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
-                                <!-- Opinion: Education Important -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="col-form-label">
-                                            I believe education is important for my success
-                                        </label>
-                                        <fieldset class="form-group">
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_educationimportant" value="stronglydisagree"
-                                                           formControlName="opinion_learningnewthings">
-                                                    Strongly Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_educationimportant" value="disagree"
-                                                           formControlName="opinion_educationimportant">
-                                                    Disagree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_educationimportant" value="agree"
-                                                           formControlName="opinion_educationimportant">
-                                                    Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input"
-                                                           name="opinion_educationimportant" value="stronglyagree"
-                                                           formControlName="opinion_educationimportant">
-                                                    Strongly Agree
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div> <!-- form-row -->
-                                <hr/>
 
-                        <div class="row">
-                        <div class="col-12">
-                            <h4>Post-Secondary Education Plan </h4>
-                        </div> <!-- col-12 -->
-                    </div>
-                    <!-- planned attendance -->
-                        <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <label for="education.plannedattendance" class="pr-2">Do you plan to attend a</label><br/>
-                                    <fieldset class="form-group">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="plannedattendance" value="fouryear"
-                                                       formControlName="plannedattendance"> &nbsp;Four Year Program
-                                            </label>
-                                        </div>
-                                        <div class="form-check ">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="plannedattendance" value="twoyear"
-                                                       formControlName="plannedattendance">  &nbsp;Two Year Program
-                                            </label>
-                                        </div>
-                                        <div class="form-check ">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="plannedattendance" value="vocational"
-                                                       formControlName="plannedattendance">  &nbsp;Vocational Program
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input"
-                                                       name="plannedattendance" value="military"
-                                                       formControlName="plannedattendance">  &nbsp;Military
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label col-4">
-                                                <input type="radio" class="form-check-input form-check-input-inline"
-                                                       name="plannedattendance" value="notapplicable"
-                                                       formControlName="plannedattendance">  &nbsp;Not Applicable
-                                            </label>
-                                            <input type="text" class="form-check-input" formControlName="plannedattendance">
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label col-4">
-                                                <input type="radio" class="form-check-input form-check-input-inline"
-                                                       name="plannedattendance" value="other"
-                                                       formControlName="plannedattendance">  &nbsp;Other
-                                            </label>
-                                            <input type="text" class="form-check-input" formControlName="plannedattendanceother">
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div> <!-- form-row -->
-                            <hr/>
-                                <!-- Where enrolled -->
+                                <!-- Expected Area of Study -->
                                 <div class="row">
                                     <div class="col-12 col-md-3">
                                         <label for="education.expectedareaofstudy"
@@ -1571,6 +1149,9 @@
                                     </div>
                                 </div>
                                 <hr/>
+                                <div class="row" id="educationGoalsComponent">
+
+                                </div>
 
                                 <a class="btn btn-outline-primary float-left"
                                    href="./ya-demographics.html">
@@ -1616,5 +1197,25 @@
         } );
     </script>
 
+    <!-- Include Current Navigation -->
+    <script>
+        $(function() {
+            $("#navsidebarNav").load("./ya-base-nav-current.html");
+        });
+    </script>
+
+    <!-- Include Youth Header -->
+    <script>
+        $(function() {
+            $("#youthHeaderViewOnly").load("./ya-base-youth-header-viewonly.html");
+        });
+    </script>
+
+    <!-- Include Youth Header -->
+    <script>
+        $(function() {
+            $("#educationGoalsComponent").load("./ya-base-goals.html #educationGoalsComponent");
+        });
+    </script>
 </body>
 </html>

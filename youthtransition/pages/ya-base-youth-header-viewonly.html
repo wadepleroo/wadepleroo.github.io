@@ -1,0 +1,43 @@
+<!-- Begin Youth Common Header insert -->
+<div class="card-header">
+    <div class="container">
+        <div class="row ">
+            <button class="col-sm-3  navbar-light navbar-toggler "
+                    data-toggle="collapse" href="#navsidebarNav"
+                    aria-expanded="false" aria-controls="navsidebarNav">
+                <span class="navbar-light navbar-toggler-icon"></span>
+            </button>
+            <h4 class="col-sm-6 text-center">
+                Youth Appraisal
+            </h4>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <form [formGroup]="headerForm" (ngSubmit)="onNext()">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <label for="header.youthName">Youth Name</label>
+                <input class="form-control form-control-sm"
+                       id="header.youthName" placeholder="Enter Youth Name"
+                       formControlName="youthName">
+            </div>
+            <div class="col-xs-12 col-md-2 pt-2 pt-md-0">
+                <label for="header.youthId">Id</label>
+                <input type="text" class="form-control form-control-sm"
+                       id="header.youthId" placeholder="Id"
+                       formControlName="youthId">
+            </div>
+            <div class="col-xs-12 col-md-3 pt-2 pt-md-0">
+                <label for="header.appraisalDate">Appraisal Date</label>
+                <p id="header.appraisalDate" name="appraisalDate">5/17/2018</p>
+            </div>
+            <div class="col-xs-12 col-md-3 pt-2 pt-md-0">
+                <label for="header.status">Status</label>
+                <p class="w-100" id="header.status" name="status">In Progress</p>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- End Youth Common Header insert -->

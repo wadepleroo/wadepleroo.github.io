@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Youth Appraisal Goals 13.1</title>
+
+    <!-- Begin Head insert -->
+    <!-- Bootstrap Core -->
+    <link rel="stylesheet"
+          href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <link href="../node_modules/jquery-ui/jquery-ui.css"
+          rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../node_modules/font-awesome/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- End Head insert -->
+
+</head>
+<body>
+
+<!-- Top Navigation -->
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col ml-auto">
+\                <div class="card d-flex" id="placementAndSafetyView">
+                    <div class="card-header">
+                        <h4 class="text-center">Goals</h4>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="placementandsafetyForm" (ngSubmit)="onNext()">
+                            <hr/>
+                            <div class="row" >
+                                <div class="col-12" id="educationGoalsComponent">
+                                    <table class="table table-bordered">
+                                        <label><h4>Education Goals</h4></label>
+                                        <thead>
+                                        <tr>
+                                            <th class="text-center">Goals</th>
+                                            <th class="text-center">Tasks to Complete</th>
+                                            <th class="text-center">Person(s) Responsible for Tasks</th>
+                                            <th class="text-center">Progress</th>
+                                            <th class="text-center">Completion Date</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.goal01">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                    formControlName="education.tasks01">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.persons01">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.progress01">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm datepicker"
+                                                       formControlName="education.completionDate01">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.goal02">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.tasks02">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.persons02">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.progress02">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm datepicker"
+                                                       formControlName="education.completionDate02">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.goal03">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.tasks03">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.persons03">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.progress03">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm datepicker"
+                                                       formControlName="education.completionDate03">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.goal04">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.tasks04">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.persons04">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="education.progress04">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm datepicker"
+                                                       formControlName="education.completionDate04">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>&nbsp;<button style="float:right;">Add Goal</button></tfoot>
+                                    </table>
+                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                            <div class="row" >
+                                <div class="col-12" id="employmentGoalsComponent">
+                                    <table class="table table-bordered">
+                                        <label><h4>Employment Goals</h4></label>
+                                        <thead>
+                                        <tr>
+                                            <th class="text-center">Goals</th>
+                                            <th class="text-center">Tasks to Complete</th>
+                                            <th class="text-center">Person(s) Responsible for Tasks</th>
+                                            <th class="text-center">Progress</th>
+                                            <th class="text-center">Completion Date</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.goal01">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.tasks01">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.persons01">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.progress01">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm datepicker"
+                                                       formControlName="employment.completionDate01">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.goal02">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.tasks02">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.persons02">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.progress02">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm datepicker"
+                                                       formControlName="employment.completionDate02">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.goal03">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.tasks03">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.persons03">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.progress03">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm datepicker"
+                                                       formControlName="employment.completionDate03">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.goal04">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.tasks04">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.persons04">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm"
+                                                       formControlName="employment.progress04">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm datepicker"
+                                                       formControlName="employment.completionDate04">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>&nbsp;<button style="float:right;">Add Goal</button></tfoot>
+                                    </table>                                </div>
+                            </div> <!-- form-row -->
+                            <hr/>
+                        </form>
+                        <!-- #EndLibraryItem -->
+                    </div> <!-- col-xs-12 -->
+                </div> <!-- row -->
+        </div> <!-- row -->
+    </div> <!-- container-fluid -->
+
+    <!-- Begin body insert -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery-ui/jquery-ui.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $( function() {
+            $( ".datepicker" ).datepicker({ minDate: -20, maxDate: "+1M +10D" });
+        } );
+    </script>
+
+    <!-- Include Current Navigation -->
+    <script>
+        $(function() {
+            $("#navsidebarNav").load("./ya-base-nav-current.html");
+        });
+    </script>
+
+    <!-- Include Youth Header -->
+    <script>
+        $(function() {
+            $("#youthHeaderViewOnly").load("./ya-base-youth-header-viewonly.html");
+        });
+    </script>
+
+    <!-- End body insert -->
+
+</body>
+</html>
