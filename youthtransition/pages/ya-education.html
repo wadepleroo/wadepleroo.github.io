@@ -223,11 +223,11 @@
                                         <label for="education.currentlyenrolledat" class="pr-2">
                                             If yes, select one of the following</label><br/>
                                         <fieldset class="form-group">
-                                            <div class="row">
+                                            <div class="d-flex p-1 bg-primary text-white">
                                                 <div class="col-6">
                                                     <div class="form-check">
                                                         <label class="form-check-label col-12 pt-2">
-                                                        <input type="radio"
+                                                        <input type="checkbox"
                                                            class="form-check-input form-check-input-inline"
                                                            name="currentlyenrolledat" value="middleschool"
                                                            formControlName="currentlyenrolledat">  &nbsp;
@@ -236,16 +236,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input type="text" class="form-check-input "
-                                                       placeholder="Middle School Grade"
-                                                       formControlName="currentmiddleschoolgrade">
+                                                    <div class="row">
+                                                        <label class="form-check-label col-12 col-md-4 pt-2">Grade</label>
+                                                        <div class="col-12 col-md-8">
+                                                            <input type="text" class="form-check-input "
+                                                                placeholder="Middle School Grade"
+                                                                formControlName="currentmiddleschoolgrade">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="d-flex p-1 bg-success text-white">
                                                 <div class="col-6">
                                                     <div class="form-check">
-                                                        <label class="form-check-label col-4 pt-2">
-                                                         <input type="radio"
+                                                        <label class="form-check-label col-12 pt-2">
+                                                         <input type="checkbox"
                                                            class="form-check-input form-check-input-inline"
                                                            name="currentlyenrolledat" value="highschool"
                                                            formControlName="currentlyenrolledat">  &nbsp;
@@ -254,16 +259,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-                                                        <input type="text" class="form-check-input"
-                                                            placeholder="High School Grade"
-                                                            formControlName="currenthighschoolgrade">
+                                                    <div class="row">
+                                                        <label class="form-check-label col-12 col-md-4 pt-2">Grade</label>
+                                                        <div class="col-12 col-md-8">
+                                                            <input type="text" class="form-check-input"
+                                                                placeholder="High School Grade"
+                                                                formControlName="currenthighschoolgrade">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="d-flex p-1 bg-primary text-white">
                                                 <div class="col-6">
                                                     <div class="form-check">
-                                                        <label class="form-check-label col-4 pt-2">
-                                                            <input type="radio"
+                                                        <label class="form-check-label col-12 pt-2">
+                                                            <input type="checkbox"
                                                                    class="form-check-input form-check-input-inline"
                                                                    name="currentlyenrolledat" value="homeSchool"
                                                                    formControlName="currentlyenrolledat">  &nbsp;
@@ -272,15 +282,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input type="text" class="form-check-input"
+                                                    <div class="row">
+                                                        <label class="form-check-label col-12 col-md-4 pt-2">Grade</label>
+                                                        <div class="col-12 col-md-8">
+
+                                                        <input type="text" class="form-check-input"
                                                            placeholder="Home School Grade"
                                                            formControlName="currenthighschoolgrade">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="d-flex p-1 bg-success text-white">
                                                 <div class="col-6">
                                                     <div class="form-check">
-                                                        <label class="form-check-label col-4 pt-2">
+                                                        <label class="form-check-label col-12 pt-2">
                                                             <input type="radio"
                                                                    class="form-check-input form-check-input-inline"
                                                                    name="currentlyenrolledat" value="GED"
@@ -290,16 +306,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input type="text" class="form-check-input datepicker"
+                                                    <div class="row">
+                                                        <label class="form-check-label col-12 col-md-4 pt-2">Expected Date</label>
+                                                        <div class="col-12 col-md-8">
+                                                        <input type="text" class="form-check-input datepicker"
                                                            placeholder="GED Expected Test Date"
                                                            formControlName="expectedgedtestdate">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="d-flex p-1 bg-primary text-white">
                                                 <div class="col-6">
                                                     <div class="form-check">
                                                         <label class="form-check-label col-4 pt-2">
-                                                            <input type="radio"
+                                                            <input type="checkbox"
                                                                    class="form-check-input form-check-input-inline"
                                                                    name="currentlyenrolledat" value="vocational"
                                                                    formControlName="currentlyenrolledat">  &nbsp;
@@ -310,11 +331,11 @@
                                                 <div class="col-6">
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="d-flex p-1 bg-success text-white">
                                                 <div class="col-6">
                                                     <div class="form-check">
                                                         <label class="form-check-label col-12 pt-2">
-                                                            <input type="radio"
+                                                            <input type="checkbox"
                                                                    class="form-check-input form-check-input-inline"
                                                                    name="currentlyenrolledat" value="occupationalcertificate"
                                                                    formControlName="currentlyenrolledat">  &nbsp;
@@ -325,11 +346,11 @@
                                                 <div class="col-6">
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="d-flex p-1 bg-primary text-white">
                                                 <div class="col-6">
                                                     <div class="form-check">
-                                                        <label class="form-check-label col-4 pt-2">
-                                                            <input type="radio"
+                                                        <label class="form-check-label col-12 pt-2">
+                                                            <input type="checkbox"
                                                                    class="form-check-input form-check-input-inline"
                                                                    name="currentlyenrolledat" value="postsecondary"
                                                                    formControlName="currentlyenrolledat">  &nbsp;
@@ -339,7 +360,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-                                                    <fieldset class="form-group">
+                                                    <fieldset class="form-group pt-2">
                                                         <div class="form-check form-check-inline">
                                                             <label class="form-check-label">
                                                                 <input type="radio"
